@@ -1,8 +1,8 @@
 $(function() {
 
   $('a, img').pluginTooltip({
-    animateClass : 'jello',
-    // initClass : 'pink'
+     animateClass : 'jello',
+     // initClass : 'pink'
   });
   
 });
