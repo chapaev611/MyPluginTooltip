@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Plugin | Ch.D</title>
+
+	<link rel="stylesheet" href="jquery.pluginTooltip.css">
+</head>
+<body class="page">
+	
+	<style>
+		.link {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.pink {
+			background: pink;
+			color: #000;
+		}
+	</style>
+
+	<a href="#" data-title="Lorem ipsum dolor sit amet.">Title с содержимым</a> <br> <br> <br> <br>
+	<a href="#" data-title="Title пустой">Title пустой</a> <br> <br> 
+	<a href="#" data-title="Title с пробелами" class="link">Title с пробелами</a> <br>
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ84hMKGYnLjbYASltpjWRIIumEGrwWPmkDFVkkr4hppCPekUIY" data-title="Это красивый енот" alt="">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="jquery.pluginTooltip.js"></script>
+
+<script>
+	$(function() {
+		$('a, img').pluginTooltip({
+			animateClass : 'jello',
+			// initClass : 'pink'
+		});
+	});
+</script>
+
+</body>
+</html>
